@@ -4,6 +4,7 @@ import (
 	"encoding/xml"
 	"eocCrawler/entities"
 	"fmt"
+	"github.com/PuerkitoBio/goquery"
 	"net/http"
 	"runtime"
 	"strings"
@@ -12,7 +13,7 @@ import (
 
 var wg sync.WaitGroup
 
-func main()  {
+func main() {
 
 	runtime.GOMAXPROCS(runtime.NumCPU())
 
@@ -25,22 +26,22 @@ func main()  {
 
 	wg.Add(len(sources))
 
-	for _, source := range sources{
+	for _, source := range sources {
 		go func(source string) {
 			resp, _ := http.Get(source)
 			rssObject := entities.Rss{}
 			xml.NewDecoder(resp.Body).Decode(&rssObject)
 
-			for _, item := range rssObject.Channel.Item{
-				if (strings.Contains(item.Title, "Call for proposal")){
-					if (strings.Contains(item.Description, "<a href=")){
-						fmt.Printf("%v: %v: %v\n", rssObject.Channel.Title, item.Title, "Link Contained")
-
+			for _, item := range rssObject.Channel.Item {
+				if strings.Contains(item.Title, "Call for proposal") {
+					if strings.Contains(item.Description, "<a href=") {
+						document, _ := goquery.NewDocumentFromReader(strings.NewReader(item.Description))
+						link, _ := document.Find("a").Attr("href")
+						fmt.Printf("%v: %v: %v\n", rssObject.Channel.Title, item.Title, link)
 					} else {
 						fmt.Printf("%v: %v: %v\n", rssObject.Channel.Title, item.Title, "X")
 
 					}
-
 
 				}
 			}
