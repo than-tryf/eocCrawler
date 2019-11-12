@@ -1,0 +1,1069 @@
+{
+  "fundingData": {
+    "GrantTenderObj": [
+      {
+        "type": 1,
+        "ccm2Id": 31085907,
+        "cftId": 0,
+        "identifier": "ALTFI-01-2017",
+        "title": "Improving access by innovative SMEs to alternative forms of finance",
+        "publicationDateLong": 1493078400000,
+        "plannedOpeningDateLong": 1493078400000,
+        "callIdentifier": "H2020-ALTFI-2017",
+        "callTitle": "Improving access by innovative SMEs to alternative forms of finance",
+        "callccm2Id": 31085908,
+        "deadlineDatesLong": [
+          1504803600000
+        ],
+        "frameworkProgramme": {
+          "id": 31045243,
+          "abbreviation": "H2020",
+          "description": "Horizon 2020"
+        },
+        "programmeDivision": [
+          {
+            "id": 31045244,
+            "abbreviation": "EC",
+            "description": "EC Treaty"
+          },
+          {
+            "id": 31047847,
+            "abbreviation": "EU.2.",
+            "description": "Industrial Leadership"
+          }
+        ],
+        "status": {
+          "id": 31094503,
+          "abbreviation": "Closed",
+          "description": "Closed"
+        },
+        "sumbissionProcedure": {
+          "id": 31094504,
+          "abbreviation": "single-stage",
+          "description": "single-stage"
+        },
+        "topicActions": [
+          {
+            "id": 31051685,
+            "description": "Coordination and support action"
+          }
+        ],
+        "tags": [
+          "convertible loans",
+          "trade finanae",
+          "crowdfunding",
+          "business angels",
+          "equity finance",
+          "venture debt",
+          "factoring",
+          "alternative finance"
+        ],
+        "flags": [
+          "OpenInnovation"
+        ],
+        "sme": false,
+        "actions": [],
+        "latestInfos": [],
+        "links": [],
+        "additionalDossiers": [],
+        "infoPackDossiers": []
+      },
+      {
+        "type": 1,
+        "ccm2Id": 31110447,
+        "cftId": 0,
+        "identifier": "AM-2019",
+        "title": "EP-PP",
+        "publicationDateLong": 1557187200000,
+        "plannedOpeningDateLong": 1557187200000,
+        "callIdentifier": "EP-PP-CLEAN-STEEL-2019",
+        "callTitle": "Research on reduction of C02 emissions in steel production",
+        "callccm2Id": 31110448,
+        "deadlineDatesLong": [
+          1562691600000
+        ],
+        "workProgrammepart": {
+          "id": 273550,
+          "ccm_id": 31110887,
+          "wp_part": "RFCS-2019",
+          "wp_year": "RFCS-2019",
+          "wp_title": "RFCS Work Plan 2019",
+          "wp_website": "https://ec.europa.eu/research/industrial_technologies/rfcs_en.html",
+          "wp_document": "http://ec.europa.eu/research/participants/data/ref/other_eu_prog/rfcs/guide/calls/rfcs-call-infopack2019_en.pdf"
+        },
+        "frameworkProgramme": {
+          "id": 31061225,
+          "abbreviation": "RFCS",
+          "description": "Research Fund for Coal & Steel"
+        },
+        "programmeDivision": [
+          {
+            "id": 31061263,
+            "abbreviation": "RFCS.1",
+            "description": "Research Fund for Coal & Steel"
+          },
+          {
+            "id": 31061264,
+            "abbreviation": "RFCS.1.1",
+            "description": "Research Fund for Coal & Steel"
+          }
+        ],
+        "status": {
+          "id": 31094503,
+          "abbreviation": "Closed",
+          "description": "Closed"
+        },
+        "sumbissionProcedure": {
+          "id": 31094504,
+          "abbreviation": "single-stage",
+          "description": "single-stage"
+        },
+        "topicActions": [
+          {
+            "id": 31061230,
+            "description": "Accompanying measures"
+          }
+        ],
+        "tags": [
+          "Steel",
+          "CO2"
+        ],
+        "sme": false,
+        "actions": [],
+        "latestInfos": [],
+        "links": [],
+        "additionalDossiers": [],
+        "infoPackDossiers": []
+      },
+      {
+        "type": 1,
+        "ccm2Id": 31081390,
+        "cftId": 0,
+        "identifier": "AMIF-2016-AG-INTE-01",
+        "title": "Integration of Third-Country Nationals",
+        "publicationDateLong": 1481155200000,
+        "plannedOpeningDateLong": 1481155200000,
+        "callIdentifier": "AMIF-2016-AG-INTE",
+        "callTitle": "Integration of Third-Country Nationals",
+        "callccm2Id": 31081394,
+        "deadlineDatesLong": [
+          1488301200000
+        ],
+        "workProgrammepart": {
+          "id": 258550,
+          "ccm_id": 31077888,
+          "wp_part": "AMIF-2016",
+          "wp_year": "AMIF-2016",
+          "wp_title": "Asylum, Migration and Integration Fund",
+          "wp_website": "http://ec.europa.eu/dgs/home-affairs/financing/fundings/migration-asylum-borders/asylum-migration-integration-fund/index_en.htm",
+          "wp_document": "http://ec.europa.eu/research/participants/data/ref/other_eu_prog/home/wp/amif-awp-2016_en.pdf"
+        },
+        "frameworkProgramme": {
+          "id": 31077795,
+          "abbreviation": "AMIF",
+          "description": "Asylum, Migration and Integration Fund"
+        },
+        "programmeDivision": [
+          {
+            "id": 31077798,
+            "abbreviation": "AMIF-1-2",
+            "description": "Legal migration and integration"
+          },
+          {
+            "id": 31077796,
+            "abbreviation": "AMIF-1",
+            "description": "AMIF-1"
+          }
+        ],
+        "status": {
+          "id": 31094503,
+          "abbreviation": "Closed",
+          "description": "Closed"
+        },
+        "sumbissionProcedure": {
+          "id": 31094504,
+          "abbreviation": "single-stage",
+          "description": "single-stage"
+        },
+        "topicActions": [
+          {
+            "id": 31077689,
+            "description": "AMIF Action Grant"
+          }
+        ],
+        "tags": [
+          "Integration",
+          "International Protection",
+          "Training",
+          "Participation in society",
+          "Relocation",
+          "Pre-departure",
+          "Post-arrival",
+          "Resettlement",
+          "Third-Country Nationals"
+        ],
+        "sme": false,
+        "actions": [],
+        "latestInfos": [],
+        "links": [],
+        "additionalDossiers": [],
+        "infoPackDossiers": []
+      },
+      {
+        "type": 1,
+        "ccm2Id": 31091768,
+        "cftId": 0,
+        "identifier": "AMIF-2017-AG-INFO",
+        "title": "Call for proposals to support awareness raising and information campaigns on the risks of irregular migration in selected third-countries",
+        "publicationDateLong": 1513036800000,
+        "plannedOpeningDateLong": 1513641600000,
+        "callIdentifier": "AMIF-2017-AG-INFO",
+        "callTitle": "Call for proposals to support awareness raising and information campaigns on the risks of irregular migration in selected third-countries",
+        "callccm2Id": 31091769,
+        "deadlineDatesLong": [
+          1522947600000
+        ],
+        "workProgrammepart": {
+          "id": 259551,
+          "ccm_id": 31083098,
+          "wp_part": "AMIF-2017",
+          "wp_year": "AMIF-2017",
+          "wp_title": "Asylum, Migration and Integration Fund",
+          "wp_website": "http://ec.europa.eu/dgs/home-affairs/financing/fundings/migration-asylum-borders/asylum-migration-integration-fund/index_en.htm",
+          "wp_document": "http://ec.europa.eu/research/participants/data/ref/other_eu_prog/home/wp/amif-awp-2017_en.pdf"
+        },
+        "frameworkProgramme": {
+          "id": 31077795,
+          "abbreviation": "AMIF",
+          "description": "Asylum, Migration and Integration Fund"
+        },
+        "programmeDivision": [
+          {
+            "id": 31077798,
+            "abbreviation": "AMIF-1-2",
+            "description": "Legal migration and integration"
+          },
+          {
+            "id": 31077796,
+            "abbreviation": "AMIF-1",
+            "description": "AMIF-1"
+          }
+        ],
+        "status": {
+          "id": 31094503,
+          "abbreviation": "Closed",
+          "description": "Closed"
+        },
+        "sumbissionProcedure": {
+          "id": 31094504,
+          "abbreviation": "single-stage",
+          "description": "single-stage"
+        },
+        "topicActions": [
+          {
+            "id": 31077689,
+            "description": "AMIF Action Grant"
+          }
+        ],
+        "tags": [
+          "AMIF",
+          "awareness raising",
+          "third-countries",
+          "campaign",
+          "migrants",
+          "migration",
+          "information",
+          "aware",
+          "EU policies"
+        ],
+        "sme": false,
+        "actions": [],
+        "latestInfos": [],
+        "links": [],
+        "additionalDossiers": [],
+        "infoPackDossiers": []
+      },
+      {
+        "type": 1,
+        "ccm2Id": 31090607,
+        "cftId": 0,
+        "identifier": "AMIF-2017-AG-INTE-01",
+        "title": "Raising Awareness on migrant's contribution to EU Societies",
+        "publicationDateLong": 1508976000000,
+        "plannedOpeningDateLong": 1511222400000,
+        "callIdentifier": "AMIF-2017-AG-INTE",
+        "callTitle": "Integration of Third-Country Nationals",
+        "callccm2Id": 31090612,
+        "deadlineDatesLong": [
+          1519923600000
+        ],
+        "workProgrammepart": {
+          "id": 259551,
+          "ccm_id": 31083098,
+          "wp_part": "AMIF-2017",
+          "wp_year": "AMIF-2017",
+          "wp_title": "Asylum, Migration and Integration Fund",
+          "wp_website": "http://ec.europa.eu/dgs/home-affairs/financing/fundings/migration-asylum-borders/asylum-migration-integration-fund/index_en.htm",
+          "wp_document": "http://ec.europa.eu/research/participants/data/ref/other_eu_prog/home/wp/amif-awp-2017_en.pdf"
+        },
+        "frameworkProgramme": {
+          "id": 31077795,
+          "abbreviation": "AMIF",
+          "description": "Asylum, Migration and Integration Fund"
+        },
+        "programmeDivision": [
+          {
+            "id": 31077798,
+            "abbreviation": "AMIF-1-2",
+            "description": "Legal migration and integration"
+          },
+          {
+            "id": 31077796,
+            "abbreviation": "AMIF-1",
+            "description": "AMIF-1"
+          }
+        ],
+        "status": {
+          "id": 31094503,
+          "abbreviation": "Closed",
+          "description": "Closed"
+        },
+        "sumbissionProcedure": {
+          "id": 31094504,
+          "abbreviation": "single-stage",
+          "description": "single-stage"
+        },
+        "topicActions": [
+          {
+            "id": 31077689,
+            "description": "AMIF Action Grant"
+          }
+        ],
+        "tags": [
+          "Integration",
+          "Migrants",
+          "Awareness raising",
+          "EU Societies",
+          "Communication"
+        ],
+        "sme": false,
+        "actions": [],
+        "latestInfos": [],
+        "links": [],
+        "additionalDossiers": [],
+        "infoPackDossiers": []
+      },
+      {
+        "type": 1,
+        "ccm2Id": 31090608,
+        "cftId": 0,
+        "identifier": "AMIF-2017-AG-INTE-02",
+        "title": "Community Building at local level for integration including through volunteering activities",
+        "publicationDateLong": 1508976000000,
+        "plannedOpeningDateLong": 1511222400000,
+        "callIdentifier": "AMIF-2017-AG-INTE",
+        "callTitle": "Integration of Third-Country Nationals",
+        "callccm2Id": 31090612,
+        "deadlineDatesLong": [
+          1519923600000
+        ],
+        "workProgrammepart": {
+          "id": 259551,
+          "ccm_id": 31083098,
+          "wp_part": "AMIF-2017",
+          "wp_year": "AMIF-2017",
+          "wp_title": "Asylum, Migration and Integration Fund",
+          "wp_website": "http://ec.europa.eu/dgs/home-affairs/financing/fundings/migration-asylum-borders/asylum-migration-integration-fund/index_en.htm",
+          "wp_document": "http://ec.europa.eu/research/participants/data/ref/other_eu_prog/home/wp/amif-awp-2017_en.pdf"
+        },
+        "frameworkProgramme": {
+          "id": 31077795,
+          "abbreviation": "AMIF",
+          "description": "Asylum, Migration and Integration Fund"
+        },
+        "programmeDivision": [
+          {
+            "id": 31077798,
+            "abbreviation": "AMIF-1-2",
+            "description": "Legal migration and integration"
+          },
+          {
+            "id": 31077796,
+            "abbreviation": "AMIF-1",
+            "description": "AMIF-1"
+          }
+        ],
+        "status": {
+          "id": 31094503,
+          "abbreviation": "Closed",
+          "description": "Closed"
+        },
+        "sumbissionProcedure": {
+          "id": 31094504,
+          "abbreviation": "single-stage",
+          "description": "single-stage"
+        },
+        "topicActions": [
+          {
+            "id": 31077689,
+            "description": "AMIF Action Grant"
+          }
+        ],
+        "tags": [
+          "Volunteering",
+          "Third-country nationals",
+          "Empowering migrants",
+          "Cultural exchanges",
+          "Integration",
+          "Migrants",
+          "Community building"
+        ],
+        "sme": false,
+        "actions": [],
+        "latestInfos": [],
+        "links": [],
+        "additionalDossiers": [],
+        "infoPackDossiers": []
+      },
+      {
+        "type": 1,
+        "ccm2Id": 31090609,
+        "cftId": 0,
+        "identifier": "AMIF-2017-AG-INTE-03",
+        "title": "Pre-departure and post-arrival support for the integration of persons in need of international protection who are resettled from a third country including through volunteering activities",
+        "publicationDateLong": 1508976000000,
+        "plannedOpeningDateLong": 1511222400000,
+        "callIdentifier": "AMIF-2017-AG-INTE",
+        "callTitle": "Integration of Third-Country Nationals",
+        "callccm2Id": 31090612,
+        "deadlineDatesLong": [
+          1519923600000
+        ],
+        "workProgrammepart": {
+          "id": 259551,
+          "ccm_id": 31083098,
+          "wp_part": "AMIF-2017",
+          "wp_year": "AMIF-2017",
+          "wp_title": "Asylum, Migration and Integration Fund",
+          "wp_website": "http://ec.europa.eu/dgs/home-affairs/financing/fundings/migration-asylum-borders/asylum-migration-integration-fund/index_en.htm",
+          "wp_document": "http://ec.europa.eu/research/participants/data/ref/other_eu_prog/home/wp/amif-awp-2017_en.pdf"
+        },
+        "frameworkProgramme": {
+          "id": 31077795,
+          "abbreviation": "AMIF",
+          "description": "Asylum, Migration and Integration Fund"
+        },
+        "programmeDivision": [
+          {
+            "id": 31077798,
+            "abbreviation": "AMIF-1-2",
+            "description": "Legal migration and integration"
+          },
+          {
+            "id": 31077796,
+            "abbreviation": "AMIF-1",
+            "description": "AMIF-1"
+          }
+        ],
+        "status": {
+          "id": 31094503,
+          "abbreviation": "Closed",
+          "description": "Closed"
+        },
+        "sumbissionProcedure": {
+          "id": 31094504,
+          "abbreviation": "single-stage",
+          "description": "single-stage"
+        },
+        "topicActions": [
+          {
+            "id": 31077689,
+            "description": "AMIF Action Grant"
+          }
+        ],
+        "tags": [
+          "Displaced person",
+          "International protection",
+          "Pre-departure",
+          "Post-arrival",
+          "Volunteering",
+          "Relocation",
+          "Third-country nationals",
+          "Integration",
+          "Resettlement"
+        ],
+        "sme": false,
+        "actions": [],
+        "latestInfos": [],
+        "links": [],
+        "additionalDossiers": [],
+        "infoPackDossiers": []
+      },
+      {
+        "type": 1,
+        "ccm2Id": 31090610,
+        "cftId": 0,
+        "identifier": "AMIF-2017-AG-INTE-04",
+        "title": "Promote swift integration of TCNs into the labour market through strengthened cooperation and mobilisation of employers and social and economic partners",
+        "publicationDateLong": 1508976000000,
+        "plannedOpeningDateLong": 1511222400000,
+        "callIdentifier": "AMIF-2017-AG-INTE",
+        "callTitle": "Integration of Third-Country Nationals",
+        "callccm2Id": 31090612,
+        "deadlineDatesLong": [
+          1519923600000
+        ],
+        "workProgrammepart": {
+          "id": 259551,
+          "ccm_id": 31083098,
+          "wp_part": "AMIF-2017",
+          "wp_year": "AMIF-2017",
+          "wp_title": "Asylum, Migration and Integration Fund",
+          "wp_website": "http://ec.europa.eu/dgs/home-affairs/financing/fundings/migration-asylum-borders/asylum-migration-integration-fund/index_en.htm",
+          "wp_document": "http://ec.europa.eu/research/participants/data/ref/other_eu_prog/home/wp/amif-awp-2017_en.pdf"
+        },
+        "frameworkProgramme": {
+          "id": 31077795,
+          "abbreviation": "AMIF",
+          "description": "Asylum, Migration and Integration Fund"
+        },
+        "programmeDivision": [
+          {
+            "id": 31077798,
+            "abbreviation": "AMIF-1-2",
+            "description": "Legal migration and integration"
+          },
+          {
+            "id": 31077796,
+            "abbreviation": "AMIF-1",
+            "description": "AMIF-1"
+          }
+        ],
+        "status": {
+          "id": 31094503,
+          "abbreviation": "Closed",
+          "description": "Closed"
+        },
+        "sumbissionProcedure": {
+          "id": 31094504,
+          "abbreviation": "single-stage",
+          "description": "single-stage"
+        },
+        "topicActions": [
+          {
+            "id": 31077689,
+            "description": "AMIF Action Grant"
+          }
+        ],
+        "tags": [
+          "Employers",
+          "Labour market",
+          "Integration",
+          "Third-country nationals",
+          "Social and economic partners"
+        ],
+        "sme": false,
+        "actions": [],
+        "latestInfos": [],
+        "links": [],
+        "additionalDossiers": [],
+        "infoPackDossiers": []
+      },
+      {
+        "type": 1,
+        "ccm2Id": 31090611,
+        "cftId": 0,
+        "identifier": "AMIF-2017-AG-INTE-05",
+        "title": "Integration of victims of trafficking in human beings",
+        "publicationDateLong": 1508976000000,
+        "plannedOpeningDateLong": 1511222400000,
+        "callIdentifier": "AMIF-2017-AG-INTE",
+        "callTitle": "Integration of Third-Country Nationals",
+        "callccm2Id": 31090612,
+        "deadlineDatesLong": [
+          1519923600000
+        ],
+        "workProgrammepart": {
+          "id": 259551,
+          "ccm_id": 31083098,
+          "wp_part": "AMIF-2017",
+          "wp_year": "AMIF-2017",
+          "wp_title": "Asylum, Migration and Integration Fund",
+          "wp_website": "http://ec.europa.eu/dgs/home-affairs/financing/fundings/migration-asylum-borders/asylum-migration-integration-fund/index_en.htm",
+          "wp_document": "http://ec.europa.eu/research/participants/data/ref/other_eu_prog/home/wp/amif-awp-2017_en.pdf"
+        },
+        "frameworkProgramme": {
+          "id": 31077795,
+          "abbreviation": "AMIF",
+          "description": "Asylum, Migration and Integration Fund"
+        },
+        "programmeDivision": [
+          {
+            "id": 31077798,
+            "abbreviation": "AMIF-1-2",
+            "description": "Legal migration and integration"
+          },
+          {
+            "id": 31077796,
+            "abbreviation": "AMIF-1",
+            "description": "AMIF-1"
+          }
+        ],
+        "status": {
+          "id": 31094503,
+          "abbreviation": "Closed",
+          "description": "Closed"
+        },
+        "sumbissionProcedure": {
+          "id": 31094504,
+          "abbreviation": "single-stage",
+          "description": "single-stage"
+        },
+        "topicActions": [
+          {
+            "id": 31077689,
+            "description": "AMIF Action Grant"
+          }
+        ],
+        "tags": [
+          "Beneficiaries of international protection",
+          "Sexual exploitation",
+          "Trafficking in human beings",
+          "Victims",
+          "Migration crisis"
+        ],
+        "sme": false,
+        "actions": [],
+        "latestInfos": [],
+        "links": [],
+        "additionalDossiers": [],
+        "infoPackDossiers": []
+      },
+      {
+        "type": 1,
+        "ccm2Id": 31100507,
+        "cftId": 0,
+        "identifier": "AMIF-2018-AG-INTE-1",
+        "title": "Local and regional integration networks",
+        "publicationDateLong": 1532563200000,
+        "plannedOpeningDateLong": 1532563200000,
+        "callIdentifier": "AMIF-2018-AG-INTE",
+        "callTitle": "Transnational actions for Integration of Third-Country Nationals in the EU Member States and supporting legal migration",
+        "callccm2Id": 31100512,
+        "deadlineDatesLong": [
+          1548954000000
+        ],
+        "workProgrammepart": {
+          "id": 269552,
+          "ccm_id": 31102087,
+          "wp_part": "AMIF-2018",
+          "wp_year": "AMIF-2018",
+          "wp_title": "Asylum, Migration and Integration Fund",
+          "wp_website": "http://ec.europa.eu/dgs/home-affairs/financing/fundings/migration-asylum-borders/asylum-migration-integration-fund/index_en.htm",
+          "wp_document": "http://ec.europa.eu/research/participants/data/ref/other_eu_prog/home/wp/amif-awp-2018_en.pdf"
+        },
+        "frameworkProgramme": {
+          "id": 31077795,
+          "abbreviation": "AMIF",
+          "description": "Asylum, Migration and Integration Fund"
+        },
+        "programmeDivision": [
+          {
+            "id": 31077798,
+            "abbreviation": "AMIF-1-2",
+            "description": "Legal migration and integration"
+          },
+          {
+            "id": 31077796,
+            "abbreviation": "AMIF-1",
+            "description": "AMIF-1"
+          }
+        ],
+        "status": {
+          "id": 31094503,
+          "abbreviation": "Closed",
+          "description": "Closed"
+        },
+        "sumbissionProcedure": {
+          "id": 31094504,
+          "abbreviation": "single-stage",
+          "description": "single-stage"
+        },
+        "topicActions": [
+          {
+            "id": 31077689,
+            "description": "AMIF Action Grant"
+          }
+        ],
+        "tags": [
+          "Legal Migration",
+          "Integration",
+          "Networks"
+        ],
+        "sme": false,
+        "actions": [],
+        "latestInfos": [],
+        "links": [],
+        "additionalDossiers": [],
+        "infoPackDossiers": []
+      },
+      {
+        "type": 1,
+        "ccm2Id": 31100508,
+        "cftId": 0,
+        "identifier": "AMIF-2018-AG-INTE-2",
+        "title": "Legal migration projects with third countries",
+        "publicationDateLong": 1532563200000,
+        "plannedOpeningDateLong": 1532563200000,
+        "callIdentifier": "AMIF-2018-AG-INTE",
+        "callTitle": "Transnational actions for Integration of Third-Country Nationals in the EU Member States and supporting legal migration",
+        "callccm2Id": 31100512,
+        "deadlineDatesLong": [
+          1548954000000
+        ],
+        "workProgrammepart": {
+          "id": 269552,
+          "ccm_id": 31102087,
+          "wp_part": "AMIF-2018",
+          "wp_year": "AMIF-2018",
+          "wp_title": "Asylum, Migration and Integration Fund",
+          "wp_website": "http://ec.europa.eu/dgs/home-affairs/financing/fundings/migration-asylum-borders/asylum-migration-integration-fund/index_en.htm",
+          "wp_document": "http://ec.europa.eu/research/participants/data/ref/other_eu_prog/home/wp/amif-awp-2018_en.pdf"
+        },
+        "frameworkProgramme": {
+          "id": 31077795,
+          "abbreviation": "AMIF",
+          "description": "Asylum, Migration and Integration Fund"
+        },
+        "programmeDivision": [
+          {
+            "id": 31077798,
+            "abbreviation": "AMIF-1-2",
+            "description": "Legal migration and integration"
+          },
+          {
+            "id": 31077796,
+            "abbreviation": "AMIF-1",
+            "description": "AMIF-1"
+          }
+        ],
+        "status": {
+          "id": 31094503,
+          "abbreviation": "Closed",
+          "description": "Closed"
+        },
+        "sumbissionProcedure": {
+          "id": 31094504,
+          "abbreviation": "single-stage",
+          "description": "single-stage"
+        },
+        "topicActions": [
+          {
+            "id": 31077689,
+            "description": "AMIF Action Grant"
+          }
+        ],
+        "tags": [
+          "Migration flows",
+          "Legal Migration",
+          "Skills",
+          "Labour",
+          "Third Countries"
+        ],
+        "sme": false,
+        "actions": [],
+        "latestInfos": [],
+        "links": [],
+        "additionalDossiers": [],
+        "infoPackDossiers": []
+      },
+      {
+        "type": 1,
+        "ccm2Id": 31100509,
+        "cftId": 0,
+        "identifier": "AMIF-2018-AG-INTE-3",
+        "title": "Support to victims of trafficking in human beings",
+        "publicationDateLong": 1532563200000,
+        "plannedOpeningDateLong": 1532563200000,
+        "callIdentifier": "AMIF-2018-AG-INTE",
+        "callTitle": "Transnational actions for Integration of Third-Country Nationals in the EU Member States and supporting legal migration",
+        "callccm2Id": 31100512,
+        "deadlineDatesLong": [
+          1548954000000
+        ],
+        "workProgrammepart": {
+          "id": 269552,
+          "ccm_id": 31102087,
+          "wp_part": "AMIF-2018",
+          "wp_year": "AMIF-2018",
+          "wp_title": "Asylum, Migration and Integration Fund",
+          "wp_website": "http://ec.europa.eu/dgs/home-affairs/financing/fundings/migration-asylum-borders/asylum-migration-integration-fund/index_en.htm",
+          "wp_document": "http://ec.europa.eu/research/participants/data/ref/other_eu_prog/home/wp/amif-awp-2018_en.pdf"
+        },
+        "frameworkProgramme": {
+          "id": 31077795,
+          "abbreviation": "AMIF",
+          "description": "Asylum, Migration and Integration Fund"
+        },
+        "programmeDivision": [
+          {
+            "id": 31077798,
+            "abbreviation": "AMIF-1-2",
+            "description": "Legal migration and integration"
+          },
+          {
+            "id": 31077796,
+            "abbreviation": "AMIF-1",
+            "description": "AMIF-1"
+          }
+        ],
+        "status": {
+          "id": 31094503,
+          "abbreviation": "Closed",
+          "description": "Closed"
+        },
+        "sumbissionProcedure": {
+          "id": 31094504,
+          "abbreviation": "single-stage",
+          "description": "single-stage"
+        },
+        "topicActions": [
+          {
+            "id": 31077689,
+            "description": "AMIF Action Grant"
+          }
+        ],
+        "tags": [
+          "Legal Migration",
+          "Human beings",
+          "Support",
+          "Victims",
+          "Integration",
+          "Trafficking"
+        ],
+        "sme": false,
+        "actions": [],
+        "latestInfos": [],
+        "links": [],
+        "additionalDossiers": [],
+        "infoPackDossiers": []
+      },
+      {
+        "type": 1,
+        "ccm2Id": 31100510,
+        "cftId": 0,
+        "identifier": "AMIF-2018-AG-INTE-4",
+        "title": "Care for migrant minors, including unaccompanied minors",
+        "publicationDateLong": 1532563200000,
+        "plannedOpeningDateLong": 1532563200000,
+        "callIdentifier": "AMIF-2018-AG-INTE",
+        "callTitle": "Transnational actions for Integration of Third-Country Nationals in the EU Member States and supporting legal migration",
+        "callccm2Id": 31100512,
+        "deadlineDatesLong": [
+          1548954000000
+        ],
+        "workProgrammepart": {
+          "id": 269552,
+          "ccm_id": 31102087,
+          "wp_part": "AMIF-2018",
+          "wp_year": "AMIF-2018",
+          "wp_title": "Asylum, Migration and Integration Fund",
+          "wp_website": "http://ec.europa.eu/dgs/home-affairs/financing/fundings/migration-asylum-borders/asylum-migration-integration-fund/index_en.htm",
+          "wp_document": "http://ec.europa.eu/research/participants/data/ref/other_eu_prog/home/wp/amif-awp-2018_en.pdf"
+        },
+        "frameworkProgramme": {
+          "id": 31077795,
+          "abbreviation": "AMIF",
+          "description": "Asylum, Migration and Integration Fund"
+        },
+        "programmeDivision": [
+          {
+            "id": 31077798,
+            "abbreviation": "AMIF-1-2",
+            "description": "Legal migration and integration"
+          },
+          {
+            "id": 31077796,
+            "abbreviation": "AMIF-1",
+            "description": "AMIF-1"
+          }
+        ],
+        "status": {
+          "id": 31094503,
+          "abbreviation": "Closed",
+          "description": "Closed"
+        },
+        "sumbissionProcedure": {
+          "id": 31094504,
+          "abbreviation": "single-stage",
+          "description": "single-stage"
+        },
+        "topicActions": [
+          {
+            "id": 31077689,
+            "description": "AMIF Action Grant"
+          }
+        ],
+        "tags": [
+          "Migrant minors",
+          "Protection",
+          "Minors",
+          "Children",
+          "Unaccompanied",
+          "Protection of children",
+          "Unaccompanied minors",
+          "Child protection"
+        ],
+        "sme": false,
+        "actions": [],
+        "latestInfos": [],
+        "links": [],
+        "additionalDossiers": [],
+        "infoPackDossiers": []
+      },
+      {
+        "type": 1,
+        "ccm2Id": 31100511,
+        "cftId": 0,
+        "identifier": "AMIF-2018-AG-INTE-5",
+        "title": "Engagement of diaspora communities on awareness raising",
+        "publicationDateLong": 1532563200000,
+        "plannedOpeningDateLong": 1532563200000,
+        "callIdentifier": "AMIF-2018-AG-INTE",
+        "callTitle": "Transnational actions for Integration of Third-Country Nationals in the EU Member States and supporting legal migration",
+        "callccm2Id": 31100512,
+        "deadlineDatesLong": [
+          1548954000000
+        ],
+        "workProgrammepart": {
+          "id": 269552,
+          "ccm_id": 31102087,
+          "wp_part": "AMIF-2018",
+          "wp_year": "AMIF-2018",
+          "wp_title": "Asylum, Migration and Integration Fund",
+          "wp_website": "http://ec.europa.eu/dgs/home-affairs/financing/fundings/migration-asylum-borders/asylum-migration-integration-fund/index_en.htm",
+          "wp_document": "http://ec.europa.eu/research/participants/data/ref/other_eu_prog/home/wp/amif-awp-2018_en.pdf"
+        },
+        "frameworkProgramme": {
+          "id": 31077795,
+          "abbreviation": "AMIF",
+          "description": "Asylum, Migration and Integration Fund"
+        },
+        "programmeDivision": [
+          {
+            "id": 31077798,
+            "abbreviation": "AMIF-1-2",
+            "description": "Legal migration and integration"
+          },
+          {
+            "id": 31077796,
+            "abbreviation": "AMIF-1",
+            "description": "AMIF-1"
+          }
+        ],
+        "status": {
+          "id": 31094503,
+          "abbreviation": "Closed",
+          "description": "Closed"
+        },
+        "sumbissionProcedure": {
+          "id": 31094504,
+          "abbreviation": "single-stage",
+          "description": "single-stage"
+        },
+        "topicActions": [
+          {
+            "id": 31077689,
+            "description": "AMIF Action Grant"
+          }
+        ],
+        "tags": [
+          "Prospective migrants",
+          "Legal migration",
+          "Asylum seekers",
+          "Migrant",
+          "Information",
+          "Migrant smuggling",
+          "Information and awareness campaign",
+          "Campaign",
+          "Awareness",
+          "Smuggling"
+        ],
+        "sme": false,
+        "actions": [],
+        "latestInfos": [],
+        "links": [],
+        "additionalDossiers": [],
+        "infoPackDossiers": []
+      },
+      {
+        "type": 1,
+        "ccm2Id": 42247429,
+        "cftId": 0,
+        "identifier": "AMIF-2019-AG-CALL-01",
+        "title": "Fostering the integration of persons in need of protection through private sponsorship schemes",
+        "publicationDateLong": 1564444800000,
+        "plannedOpeningDateLong": 1564444800000,
+        "callIdentifier": "AMIF-2019-AG-CALL",
+        "callTitle": "Transnational actions  on asylum, migration and integration",
+        "callccm2Id": 42247451,
+        "deadlineDatesLong": [
+          1580403600000
+        ],
+        "workProgrammepart": {
+          "id": 276551,
+          "ccm_id": 42267167,
+          "wp_part": "AMIF-2019",
+          "wp_year": "AMIF-2019",
+          "wp_title": "AMIF-2019",
+          "wp_website": "http://ec.europa.eu/dgs/home-affairs/financing/fundings/migration-asylum-borders/asylum-migration-integration-fund/index_en.htm",
+          "wp_document": "http://ec.europa.eu/research/participants/data/ref/other_eu_prog/home/wp/amif-awp-2019_en.pdf"
+        },
+        "frameworkProgramme": {
+          "id": 31077795,
+          "abbreviation": "AMIF",
+          "description": "Asylum, Migration and Integration Fund"
+        },
+        "programmeDivision": [
+          {
+            "id": 31077798,
+            "abbreviation": "AMIF-1-2",
+            "description": "Legal migration and integration"
+          },
+          {
+            "id": 31077796,
+            "abbreviation": "AMIF-1",
+            "description": "AMIF-1"
+          }
+        ],
+        "status": {
+          "id": 31094502,
+          "abbreviation": "Open",
+          "description": "Open"
+        },
+        "sumbissionProcedure": {
+          "id": 31094504,
+          "abbreviation": "single-stage",
+          "description": "single-stage"
+        },
+        "topicActions": [
+          {
+            "id": 31077689,
+            "description": "AMIF Action Grant"
+          }
+        ],
+        "tags": [
+          "legal migration",
+          "integration",
+          "sponsorship"
+        ],
+        "sme": false,
+        "actions": [],
+        "latestInfos": [],
+        "links": [],
+        "additionalDossiers": [],
+        "infoPackDossiers": []
+      }
+    ]
+  }
+}

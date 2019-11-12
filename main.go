@@ -1,18 +1,12 @@
 package main
 
 import (
-	"encoding/xml"
-	"eocCrawler/entities"
-	"fmt"
-	"github.com/PuerkitoBio/goquery"
-	"net/http"
-	"runtime"
-	"strings"
 	"sync"
 )
 
 var wg sync.WaitGroup
 
+/*
 func main() {
 
 	runtime.GOMAXPROCS(runtime.NumCPU())
@@ -29,7 +23,7 @@ func main() {
 	for _, source := range sources {
 		go func(source string) {
 			resp, _ := http.Get(source)
-			rssObject := entities.Rss{}
+			rssObject := payloads.Rss{}
 			xml.NewDecoder(resp.Body).Decode(&rssObject)
 
 			for _, item := range rssObject.Channel.Item {
@@ -53,3 +47,34 @@ func main() {
 	wg.Wait()
 
 }
+*/
+//
+//func main() {
+//	start := time.Now()
+//	runtime.GOMAXPROCS(runtime.NumCPU())
+//
+//	sources := []string{
+//		"https://ec.europa.eu/research/participants/portal/data/call/h2020/calls.json",
+//	}
+//
+//	wg.Add(len(sources))
+//
+//	for _, source := range sources {
+//		go func(source string){
+//
+//			resp, _ := http.Get(source)
+//
+//			callsData := payloads.Call{}
+//			_ = json.NewDecoder(resp.Body).Decode(&callsData)
+//			fmt.Println(len(callsData.CallData.Calls))
+//
+//			elapsed := time.Since(start)
+//			fmt.Println(elapsed)
+//			wg.Done()
+//		}(source)
+//	}
+//
+//	wg.Wait()
+//
+//
+//}
