@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"net/http"
 	"runtime"
+	"strings"
 	"sync"
 	"time"
 )
@@ -62,6 +63,9 @@ const (
 
 	TENDERS_URL = "https://ec.europa.eu/info/funding-tenders/opportunities/data/referenceData/grantsTenders.json"
 	TOPIC_URL   = "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/"
+
+	GRANT  = 1
+	TENDER = 0
 )
 
 func main() {
@@ -91,15 +95,17 @@ func main() {
 }
 
 func getCallTopics(callTender payloads.GrantTenderObj) {
-	if (callTender.Status.Description == OPEN || callTender.Status.Description == FORTHCOMING) && (callTender.Identifier) {
+	if callTender.Status.Description == OPEN || callTender.Status.Description == FORTHCOMING {
 
-		//topicCall := strings.ToLower(callTender.Identifier)
-		//resp, _ := http.Get(TOPIC_URL+topicCall+".json")
-		//topicData := payloads.Topics{}
-		//fmt.Println(topicCall)
-		//_ = json.NewDecoder(resp.Body).Decode(&topicData)
-		//fmt.Printf("************\n%v\n\n%v\n**********************\n", callTender, topicData)
-		fmt.Printf("************\n%v\n***********\n", callTender)
+		if callTender.Type == GRANT {
+			topicCall := strings.ToLower(callTender.Identifier)
+			resp, _ := http.Get(TOPIC_URL + topicCall + ".json")
+			topicData := payloads.Topics{}
+			_ = json.NewDecoder(resp.Body).Decode(&topicData)
+			fmt.Printf("************\n%v\n\n%v\n**********************\n", callTender, topicData)
+		} else {
+			fmt.Printf("************\n%v\n***********\n", callTender)
+		}
 
 	}
 	wg.Done()
