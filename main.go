@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"eocCrawler/payloads"
+	"eocCrawler/payloads/eoc"
 	"fmt"
 	"net/http"
 	"runtime"
@@ -12,49 +13,6 @@ import (
 )
 
 var wg sync.WaitGroup
-
-/*
-func main() {
-
-	runtime.GOMAXPROCS(runtime.NumCPU())
-
-	sources := []string{
-		"https://eacea.ec.europa.eu/erasmus-plus/rss_en.xml",
-		"https://eacea.ec.europa.eu/creative-europe/rss_en.xml",
-		"https://eacea.ec.europa.eu/europe-for-citizens/rss_en.xml",
-		"https://eacea.ec.europa.eu/eu-aid-volunteers/rss_en.xml_en",
-	}
-
-	wg.Add(len(sources))
-
-	for _, source := range sources {
-		go func(source string) {
-			resp, _ := http.Get(source)
-			rssObject := payloads.Rss{}
-			xml.NewDecoder(resp.Body).Decode(&rssObject)
-
-			for _, item := range rssObject.Channel.Item {
-				if strings.Contains(item.Title, "Call for proposal") {
-					if strings.Contains(item.Description, "<a href=") {
-						document, _ := goquery.NewDocumentFromReader(strings.NewReader(item.Description))
-						link, _ := document.Find("a").Attr("href")
-						fmt.Printf("%v: %v: %v\n", rssObject.Channel.Title, item.Title, link)
-					} else {
-						fmt.Printf("%v: %v: %v\n", rssObject.Channel.Title, item.Title, "X")
-
-					}
-
-				}
-			}
-
-			wg.Done()
-		}(source)
-	}
-
-	wg.Wait()
-
-}
-*/
 
 const (
 	CLOSED      = "Closed"
@@ -70,8 +28,7 @@ const (
 
 func main() {
 	start := time.Now()
-	//runtime.GOMAXPROCS(runtime.NumCPU())
-	runtime.GOMAXPROCS(2)
+	runtime.GOMAXPROCS(runtime.NumCPU())
 
 	resp, _ := http.Get(TENDERS_URL)
 
@@ -79,34 +36,31 @@ func main() {
 	_ = json.NewDecoder(resp.Body).Decode(&callsData)
 	for _, call := range callsData.FundingData.GrantTenderObj {
 		wg.Add(1)
-		/*go func(callIndex int){
-			if(call.Status.Description=="Forthcoming") {
-				fmt.Printf("[%v] : %v\n\n", callIndex, call)
-			}
-			wg.Done()
-		}(callIndex)*/
-
-		go getCallTopics(call)
+		go getCallTopics(call, &wg)
 	}
-
 	elapsed := time.Since(start)
 	fmt.Println(elapsed)
 	wg.Wait()
 }
 
-func getCallTopics(callTender payloads.GrantTenderObj) {
+func getCallTopics(callTender payloads.GrantTenderObj, wg *sync.WaitGroup) {
 	if callTender.Status.Description == OPEN || callTender.Status.Description == FORTHCOMING {
-
+		call4proposal := eoc.Call4Proposal{}
+		var bytes []byte
 		if callTender.Type == GRANT {
 			topicCall := strings.ToLower(callTender.Identifier)
 			resp, _ := http.Get(TOPIC_URL + topicCall + ".json")
 			topicData := payloads.Topics{}
 			_ = json.NewDecoder(resp.Body).Decode(&topicData)
-			fmt.Printf("************\n%v\n\n%v\n**********************\n", callTender, topicData)
+			call4proposal.Grant = callTender
+			call4proposal.TopicInfo = topicData.TopicDetails
+			bytes, _ = json.Marshal(call4proposal)
 		} else {
-			fmt.Printf("************\n%v\n***********\n", callTender)
+			call4proposal.Grant = callTender
+			call4proposal.TopicInfo = payloads.TopicDetails{}
+			bytes, _ = json.Marshal(call4proposal)
 		}
-
+		fmt.Printf("%v\n", string(bytes))
 	}
 	wg.Done()
 }

@@ -1,13 +1,13 @@
 package payloads
 
+//type BudgetYearMapId
+
 type BudgetTopicId struct {
-	Action             string   `json:"action"`
-	PlannedOpeningDate string   `json:"plannedOpeningDate"`
-	DeadlineModel      string   `json:"deadlineModel"`
-	DeadlineDates      []string `json:"deadlineDates"`
-	BudgetYearMap      struct {
-		Num2018 int `json:"2018"`
-	} `json:"budgetYearMap"`
+	Action               string         `json:"action"`
+	PlannedOpeningDate   string         `json:"plannedOpeningDate"`
+	DeadlineModel        string         `json:"deadlineModel"`
+	DeadlineDates        []string       `json:"deadlineDates"`
+	BudgetYearMap        map[string]int `json:"budgetYearMap"`
 	BudgetTopicActionMap struct {
 	} `json:"budgetTopicActionMap"`
 }
@@ -60,10 +60,8 @@ type TopicDetails struct {
 	} `json:"actions"`
 	LatestInfos            []interface{} `json:"latestInfos"`
 	BudgetOverviewJSONItem struct {
-		BudgetTopicActionMap struct {
-			BudgetTopic map[int]BudgetTopicId
-		} `json:"budgetTopicActionMap"`
-		BudgetYearsColumns []string `json:"budgetYearsColumns"`
+		BudgetTopicActionMap map[string][]BudgetTopicId `json:"budgetTopicActionMap"`
+		BudgetYearsColumns   []string                   `json:"budgetYearsColumns"`
 	} `json:"budgetOverviewJSONItem"`
 	Description        string        `json:"description"`
 	Conditions         string        `json:"conditions"`
