@@ -5,6 +5,7 @@ import (
 	"eocCrawler/payloads"
 	"eocCrawler/payloads/eoc"
 	"fmt"
+	"gopkg.in/confluentinc/confluent-kafka-go.v1/kafka"
 	"net/http"
 	"runtime"
 	"strings"
@@ -24,11 +25,20 @@ const (
 
 	GRANT  = 1
 	TENDER = 0
+
+	KAFKA_URL   = "10.16.3.22"
+	KAFKA_TOPIC = "eocCalls"
 )
+
+var p *kafka.Producer
 
 func main() {
 	start := time.Now()
 	runtime.GOMAXPROCS(runtime.NumCPU())
+
+	p, _ = kafka.NewProducer(&kafka.ConfigMap{"bootstrap.servers": KAFKA_URL})
+
+	defer p.Close()
 
 	resp, _ := http.Get(TENDERS_URL)
 
@@ -46,7 +56,7 @@ func main() {
 func getCallTopics(callTender payloads.GrantTenderObj, wg *sync.WaitGroup) {
 	if callTender.Status.Description == OPEN || callTender.Status.Description == FORTHCOMING {
 		call4proposal := eoc.Call4Proposal{}
-		var bytes []byte
+		var bts []byte
 		if callTender.Type == GRANT {
 			topicCall := strings.ToLower(callTender.Identifier)
 			resp, _ := http.Get(TOPIC_URL + topicCall + ".json")
@@ -54,13 +64,28 @@ func getCallTopics(callTender payloads.GrantTenderObj, wg *sync.WaitGroup) {
 			_ = json.NewDecoder(resp.Body).Decode(&topicData)
 			call4proposal.Grant = callTender
 			call4proposal.TopicInfo = topicData.TopicDetails
-			bytes, _ = json.Marshal(call4proposal)
+			bts, _ = json.Marshal(call4proposal)
 		} else {
 			call4proposal.Grant = callTender
 			call4proposal.TopicInfo = payloads.TopicDetails{}
-			bytes, _ = json.Marshal(call4proposal)
+			bts, _ = json.Marshal(call4proposal)
 		}
-		fmt.Printf("%v\n", string(bytes))
+
+		topic := KAFKA_TOPIC
+		//callBodyBytes := new(bytes.Buffer)
+		_ = p.Produce(&kafka.Message{
+			TopicPartition: kafka.TopicPartition{
+				Topic:     &topic,
+				Partition: kafka.PartitionAny,
+			},
+			Value:     bts,
+			Timestamp: time.Time{},
+		}, nil)
+
 	}
 	wg.Done()
+}
+
+func pushMessage(proposal chan eoc.Call4Proposal) {
+
 }
