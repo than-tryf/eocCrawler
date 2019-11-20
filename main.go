@@ -59,18 +59,20 @@ func getCallTopics(callTender payloads.GrantTenderObj, wg *sync.WaitGroup) {
 		var bts []byte
 		if callTender.Type == GRANT {
 			topicCall := strings.ToLower(callTender.Identifier)
-			resp, _ := http.Get(TOPIC_URL + topicCall + ".json")
+			resp, err := http.Get(TOPIC_URL + topicCall + ".json")
 			topicData := payloads.Topics{}
-			_ = json.NewDecoder(resp.Body).Decode(&topicData)
 			call4proposal.Grant = callTender
-			call4proposal.TopicInfo = topicData.TopicDetails
+			call4proposal.TopicInfo = payloads.TopicDetails{}
+			if err == nil {
+				_ = json.NewDecoder(resp.Body).Decode(&topicData)
+				call4proposal.TopicInfo = topicData.TopicDetails
+			}
 			bts, _ = json.Marshal(call4proposal)
 		} else {
 			call4proposal.Grant = callTender
 			call4proposal.TopicInfo = payloads.TopicDetails{}
 			bts, _ = json.Marshal(call4proposal)
 		}
-
 		topic := KAFKA_TOPIC
 		//callBodyBytes := new(bytes.Buffer)
 		_ = p.Produce(&kafka.Message{
@@ -86,6 +88,7 @@ func getCallTopics(callTender payloads.GrantTenderObj, wg *sync.WaitGroup) {
 	wg.Done()
 }
 
-func pushMessage(proposal chan eoc.Call4Proposal) {
+/*func pushMessage(proposal chan eoc.Call4Proposal) {
 
 }
+*/
