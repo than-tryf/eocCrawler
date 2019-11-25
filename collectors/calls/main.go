@@ -73,7 +73,8 @@ func getCallTopics(callTender payloads.GrantTenderObj, wg *sync.WaitGroup) {
 			call4proposal.TopicInfo = payloads.TopicDetails{}
 			bts, _ = json.Marshal(call4proposal)
 		}
-		topic := KAFKA_TOPIC
+
+		/*topic := KAFKA_TOPIC
 		//callBodyBytes := new(bytes.Buffer)
 		_ = p.Produce(&kafka.Message{
 			TopicPartition: kafka.TopicPartition{
@@ -82,13 +83,10 @@ func getCallTopics(callTender payloads.GrantTenderObj, wg *sync.WaitGroup) {
 			},
 			Value:     bts,
 			Timestamp: time.Time{},
-		}, nil)
+		}, nil)*/
+
+		fmt.Printf("%v", bts)
 
 	}
 	wg.Done()
 }
-
-/*func pushMessage(proposal chan eoc.Call4Proposal) {
-
-}
-*/
