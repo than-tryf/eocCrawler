@@ -26,7 +26,8 @@ const (
 	GRANT  = 1
 	TENDER = 0
 
-	KAFKA_URL   = "10.16.3.22"
+	KAFKA_URL   = "10.16.3.61"
+	KAFKA_PORT  = "31090"
 	KAFKA_TOPIC = "eocCalls"
 )
 
@@ -36,7 +37,7 @@ func main() {
 	start := time.Now()
 	runtime.GOMAXPROCS(runtime.NumCPU())
 
-	p, _ = kafka.NewProducer(&kafka.ConfigMap{"bootstrap.servers": KAFKA_URL})
+	p, _ = kafka.NewProducer(&kafka.ConfigMap{"bootstrap.servers": KAFKA_URL + ":" + KAFKA_PORT})
 
 	defer p.Close()
 
@@ -74,7 +75,7 @@ func getCallTopics(callTender payloads.GrantTenderObj, wg *sync.WaitGroup) {
 			bts, _ = json.Marshal(call4proposal)
 		}
 
-		/*topic := KAFKA_TOPIC
+		topic := KAFKA_TOPIC
 		//callBodyBytes := new(bytes.Buffer)
 		_ = p.Produce(&kafka.Message{
 			TopicPartition: kafka.TopicPartition{
@@ -83,9 +84,9 @@ func getCallTopics(callTender payloads.GrantTenderObj, wg *sync.WaitGroup) {
 			},
 			Value:     bts,
 			Timestamp: time.Time{},
-		}, nil)*/
+		}, nil)
 
-		fmt.Printf("%v", bts)
+		//fmt.Printf("%v", bts)
 
 	}
 	wg.Done()

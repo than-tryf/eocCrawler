@@ -1,5 +1,7 @@
 package payloads
 
+// ./kafka-topics --zookeeper zookeeper.enedi-infra.svc.cluster.local:2181 --delete --topic eocCalls
+
 //type BudgetYearMapId
 
 type BudgetTopicId struct {
@@ -13,16 +15,16 @@ type BudgetTopicId struct {
 }
 
 type TopicDetails struct {
-	Type                int    `json:"type"`
-	Ccm2ID              int    `json:"ccm2Id"`
-	CftID               int    `json:"cftId"`
-	Identifier          string `json:"identifier"`
-	Title               string `json:"title"`
-	PublicationDateLong int64  `json:"publicationDateLong"`
-	CallIdentifier      string `json:"callIdentifier"`
-	CallTitle           string `json:"callTitle"`
-	Callccm2ID          int    `json:"callccm2Id"`
-	WorkProgrammepart   struct {
+	Type int `json:"type"`
+	//Ccm2ID              int    `json:"ccm2Id"`
+	//CftID               int    `json:"cftId"`
+	//Identifier          string `json:"identifier"`
+	//Title               string `json:"title"`
+	//PublicationDateLong int64  `json:"publicationDateLong"`
+	//CallIdentifier      string `json:"callIdentifier"`
+	//CallTitle           string `json:"callTitle"`
+	//Callccm2ID          int    `json:"callccm2Id"`
+	/*WorkProgrammepart   struct {
 		ID         int    `json:"id"`
 		CcmID      int    `json:"ccm_id"`
 		WpPart     string `json:"wp_part"`
@@ -30,19 +32,19 @@ type TopicDetails struct {
 		WpTitle    string `json:"wp_title"`
 		WpWebsite  string `json:"wp_website"`
 		WpDocument string `json:"wp_document"`
-	} `json:"workProgrammepart"`
-	FrameworkProgramme struct {
+	} `json:"workProgrammepart"`*/
+	/*FrameworkProgramme struct {
 		ID           int    `json:"id"`
 		Abbreviation string `json:"abbreviation"`
 		Description  string `json:"description"`
-	} `json:"frameworkProgramme"`
-	ProgrammeDivision []struct {
+	} `json:"frameworkProgramme"`*/
+	/*ProgrammeDivision []struct {
 		ID           int    `json:"id"`
 		Abbreviation string `json:"abbreviation"`
 		Description  string `json:"description"`
-	} `json:"programmeDivision"`
-	Tags    []string `json:"tags"`
-	Sme     bool     `json:"sme"`
+	} `json:"programmeDivision"`*/
+	//Tags    []string `json:"tags"`
+	//Sme     bool     `json:"sme"`
 	Actions []struct {
 		Status struct {
 			ID           int    `json:"id"`
@@ -63,12 +65,12 @@ type TopicDetails struct {
 		BudgetTopicActionMap map[string][]BudgetTopicId `json:"budgetTopicActionMap"`
 		BudgetYearsColumns   []string                   `json:"budgetYearsColumns"`
 	} `json:"budgetOverviewJSONItem"`
-	Description        string        `json:"description"`
-	Conditions         string        `json:"conditions"`
-	SupportInfo        string        `json:"supportInfo"`
-	SepTemplate        string        `json:"sepTemplate"`
-	Links              []interface{} `json:"links"`
-	AdditionalDossiers []struct {
+	Description string `json:"description"`
+	Conditions  string `json:"conditions"`
+	SupportInfo string `json:"supportInfo"`
+	//SepTemplate        string        `json:"sepTemplate"`
+	Links []interface{} `json:"links"`
+	/*AdditionalDossiers []struct {
 		CallID           int64  `json:"callId"`
 		ID               int    `json:"id"`
 		Title            string `json:"title"`
@@ -84,7 +86,7 @@ type TopicDetails struct {
 			Crc32    int64  `json:"crc32"`
 		} `json:"translationFiles"`
 	} `json:"additionalDossiers"`
-	InfoPackDossiers    []interface{} `json:"infoPackDossiers"`
+	InfoPackDossiers    []interface{} `json:"infoPackDossiers"`*/
 	CallDetailsJSONItem struct {
 		AdditionalInfo string `json:"additionalInfo"`
 		LatestInfos    []struct {

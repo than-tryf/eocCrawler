@@ -27,24 +27,24 @@ type GrantTenderObj struct {
 		Abbreviation string `json:"abbreviation"`
 		Description  string `json:"description"`
 	} `json:"status"`
-	SumbissionProcedure struct {
+	/*SumbissionProcedure struct {
 		ID           int    `json:"id"`
 		Abbreviation string `json:"abbreviation"`
 		Description  string `json:"description"`
-	} `json:"sumbissionProcedure"`
-	TopicActions []struct {
+	} `json:"sumbissionProcedure"`*/
+	/*TopicActions []struct {
 		ID          int    `json:"id"`
 		Description string `json:"description"`
-	} `json:"topicActions"`
-	Tags               []string      `json:"tags"`
-	Flags              []string      `json:"flags,omitempty"`
-	Sme                bool          `json:"sme"`
-	Actions            []interface{} `json:"actions"`
-	LatestInfos        []interface{} `json:"latestInfos"`
-	Links              []interface{} `json:"links"`
-	AdditionalDossiers []interface{} `json:"additionalDossiers"`
-	InfoPackDossiers   []interface{} `json:"infoPackDossiers"`
-	WorkProgrammepart  struct {
+	} `json:"topicActions"`*/
+	Tags []string `json:"tags"`
+	//Flags              []string      `json:"flags,omitempty"`
+	//Sme                bool          `json:"sme"`
+	//Actions            []interface{} `json:"actions"`
+	//LatestInfos        []interface{} `json:"latestInfos"`
+	//Links              []interface{} `json:"links"`
+	//AdditionalDossiers []interface{} `json:"additionalDossiers"`
+	//InfoPackDossiers   []interface{} `json:"infoPackDossiers"`
+	WorkProgrammepart struct {
 		ID         int    `json:"id"`
 		CcmID      int    `json:"ccm_id"`
 		WpPart     string `json:"wp_part"`
