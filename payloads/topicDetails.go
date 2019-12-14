@@ -60,7 +60,7 @@ type TopicDetails struct {
 		} `json:"submissionProcedure"`
 		DeadlineDates []string `json:"deadlineDates"`
 	} `json:"actions"`
-	LatestInfos            []interface{} `json:"latestInfos"`
+	//LatestInfos            []interface{} `json:"latestInfos"`
 	BudgetOverviewJSONItem struct {
 		BudgetTopicActionMap map[string][]BudgetTopicId `json:"budgetTopicActionMap"`
 		BudgetYearsColumns   []string                   `json:"budgetYearsColumns"`
@@ -88,12 +88,12 @@ type TopicDetails struct {
 	} `json:"additionalDossiers"`
 	InfoPackDossiers    []interface{} `json:"infoPackDossiers"`*/
 	CallDetailsJSONItem struct {
-		AdditionalInfo string `json:"additionalInfo"`
-		LatestInfos    []struct {
+		//AdditionalInfo string `json:"additionalInfo"`
+		/*LatestInfos    []struct {
 			ApprovalDate   string `json:"approvalDate"`
 			LastChangeDate string `json:"lastChangeDate"`
 			Content        string `json:"content"`
-		} `json:"latestInfos"`
+		} `json:"latestInfos"`*/
 		HasForthcomingTopics bool `json:"hasForthcomingTopics"`
 		HasOpenTopics        bool `json:"hasOpenTopics"`
 		AllClosedTopics      bool `json:"allClosedTopics"`
