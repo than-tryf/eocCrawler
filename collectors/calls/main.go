@@ -26,7 +26,7 @@ const (
 	GRANT  = 1
 	TENDER = 0
 
-	KAFKA_URL   = "10.16.3.61"
+	KAFKA_URL   = "platform.eoc.org.cy"
 	KAFKA_PORT  = "31090"
 	KAFKA_TOPIC = "eocCalls"
 )
