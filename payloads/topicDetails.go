@@ -1,6 +1,6 @@
 package payloads
 
-// ./kafka-topics --zookeeper zookeeper.enedi-infra.svc.cluster.local:2181 --delete --topic eocCalls
+// ./kafka-topics --zookeeper zookeeper.eoc-infra.svc.cluster.local:2181 --delete --topic eocCalls
 
 //type BudgetYearMapId
 
